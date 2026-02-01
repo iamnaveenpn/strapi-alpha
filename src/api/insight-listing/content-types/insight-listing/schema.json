@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "insight_listings",
+  "info": {
+    "singularName": "insight-listing",
+    "pluralName": "insight-listings",
+    "displayName": "Insight Listing"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

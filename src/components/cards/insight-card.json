@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_cards_insight_cards",
+  "info": {
+    "displayName": "InsightCard"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "insight_categories",
+  "info": {
+    "singularName": "insight-category",
+    "pluralName": "insight-categories",
+    "displayName": "Insight Category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "insights": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::insight.insight",
+      "mappedBy": "insight_category"
+    }
+  }
+}
