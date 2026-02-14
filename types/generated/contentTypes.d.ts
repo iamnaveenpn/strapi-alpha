@@ -542,6 +542,7 @@ export interface ApiInsightInsight extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    image: Schema.Attribute.Media<'images'>;
     insight_category: Schema.Attribute.Relation<
       'manyToOne',
       'api::insight-category.insight-category'

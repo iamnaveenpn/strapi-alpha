@@ -10,6 +10,7 @@ export default factories.createCoreService('api::insight.insight', ({ strapi }) 
             },
             select: ['id', 'title', 'url', 'slug', 'content'],
             populate: {
+                image: true,
                 insight_category: {
                     select: ['id', 'title', 'slug'],
                     where: { publishedAt: { $notNull: true } }
@@ -44,6 +45,7 @@ export default factories.createCoreService('api::insight.insight', ({ strapi }) 
             },
             select: ['id', 'title', 'slug', 'url', 'content'],
             populate: {
+                image: true,
                 insight_category: {
                     select: ['id', 'title', 'slug'],
                     where: { publishedAt: { $notNull: true } }

@@ -21,7 +21,10 @@ export default factories.createCoreController('api::insight-listing.insight-list
             populate: {
                 insights: {
                     select: ['id', 'title', 'slug', 'url', 'content'],
-                    where: { publishedAt: { $notNull: true } }
+                    where: { publishedAt: { $notNull: true } },
+                    populate: {
+                        image: true
+                    }
                 }
             }
         });
